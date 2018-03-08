@@ -1,0 +1,10 @@
+version: '1'
+services:
+  db:
+      image: postgres:9.4.7
+      ports:
+        - 5432:5432
+      environment:
+        - POSTGRES_DB=test_evolutions
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
